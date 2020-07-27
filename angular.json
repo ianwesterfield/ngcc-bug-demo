@@ -14,6 +14,11 @@
           "options": {
             "tsConfig": "projects/ngcc-test-library/tsconfig.lib.json",
             "project": "projects/ngcc-test-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngcc-test-library/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -76,7 +81,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -85,6 +89,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -152,5 +160,8 @@
       }
     }
   },
-  "defaultProject": "ngcc-test-library"
+  "defaultProject": "ngcc-test-app",
+  "cli": {
+    "analytics": false
+  }
 }
