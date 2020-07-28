@@ -6,15 +6,12 @@ import { Component, OnInit } from '@angular/core';
     <p>
       ngcc-test-library works!
     </p>
-    <lib-ngcc-test-secondary></lib-ngcc-test-secondary>
   `,
   styles: []
 })
 export class NgccTestLibraryComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
-
 }

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NgccTestLibraryModule } from 'ngcc-test-library';
+import { NgccTestSecondaryModule } from 'ngcc-test-library/ngcc-test-secondary';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { NgccTestLibraryModule } from 'ngcc-test-library';
   ],
   imports: [
     BrowserModule,
-    NgccTestLibraryModule
+    NgccTestLibraryModule,
+    NgccTestSecondaryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
